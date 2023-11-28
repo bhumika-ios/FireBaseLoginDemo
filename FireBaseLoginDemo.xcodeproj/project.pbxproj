@@ -22,6 +22,8 @@
 		AC8DFDF42B121153006AE016 /* FireBaseLoginDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DFDF32B121153006AE016 /* FireBaseLoginDemoTests.swift */; };
 		AC8DFDFE2B121153006AE016 /* FireBaseLoginDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DFDFD2B121153006AE016 /* FireBaseLoginDemoUITests.swift */; };
 		AC8DFE002B121153006AE016 /* FireBaseLoginDemoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8DFDFF2B121153006AE016 /* FireBaseLoginDemoUITestsLaunchTests.swift */; };
+		ACD87FDB2B14B3D30090BE99 /* Verification.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD87FDA2B14B3D30090BE99 /* Verification.swift */; };
+		ACD87FDD2B14B4F80090BE99 /* OTPViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACD87FDC2B14B4F80090BE99 /* OTPViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +64,8 @@
 		AC8DFDF92B121153006AE016 /* FireBaseLoginDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FireBaseLoginDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC8DFDFD2B121153006AE016 /* FireBaseLoginDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseLoginDemoUITests.swift; sourceTree = "<group>"; };
 		AC8DFDFF2B121153006AE016 /* FireBaseLoginDemoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseLoginDemoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ACD87FDA2B14B3D30090BE99 /* Verification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verification.swift; sourceTree = "<group>"; };
+		ACD87FDC2B14B4F80090BE99 /* OTPViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPViewModel.swift; sourceTree = "<group>"; };
 		B0117897E19AD763D31BF1CD /* Pods_FireBaseLoginDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireBaseLoginDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF562E721C6E5160E1838D28 /* Pods_FireBaseLoginDemo_FireBaseLoginDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FireBaseLoginDemo_FireBaseLoginDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA62ACE1C6FBE089E1C804FB /* Pods-FireBaseLoginDemo-FireBaseLoginDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FireBaseLoginDemo-FireBaseLoginDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-FireBaseLoginDemo-FireBaseLoginDemoUITests/Pods-FireBaseLoginDemo-FireBaseLoginDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -123,12 +127,15 @@
 			children = (
 				AC8DFDE22B121151006AE016 /* FireBaseLoginDemoApp.swift */,
 				AC8DFDE42B121151006AE016 /* ContentView.swift */,
+				AC0B18172B14711B00B67F15 /* Register.swift */,
+				AC0B18152B1470C600B67F15 /* Login.swift */,
+				AC0B181B2B1471D300B67F15 /* HomeScreen.swift */,
+				AC0B18192B14715500B67F15 /* ErrorView.swift */,
+				ACD87FDA2B14B3D30090BE99 /* Verification.swift */,
+				ACD87FDC2B14B4F80090BE99 /* OTPViewModel.swift */,
 				AC0B18132B146A9F00B67F15 /* GoogleService-Info.plist */,
 				AC8DFDE62B121153006AE016 /* Assets.xcassets */,
 				AC8DFDE82B121153006AE016 /* Preview Content */,
-				AC0B18152B1470C600B67F15 /* Login.swift */,
-				AC0B18192B14715500B67F15 /* ErrorView.swift */,
-				AC0B181B2B1471D300B67F15 /* HomeScreen.swift */,
 			);
 			path = FireBaseLoginDemo;
 			sourceTree = "<group>";
@@ -137,7 +144,6 @@
 			isa = PBXGroup;
 			children = (
 				AC8DFDE92B121153006AE016 /* Preview Assets.xcassets */,
-				AC0B18172B14711B00B67F15 /* Register.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -425,6 +431,8 @@
 				AC0B18162B1470C600B67F15 /* Login.swift in Sources */,
 				AC0B181C2B1471D300B67F15 /* HomeScreen.swift in Sources */,
 				AC8DFDE52B121151006AE016 /* ContentView.swift in Sources */,
+				ACD87FDD2B14B4F80090BE99 /* OTPViewModel.swift in Sources */,
+				ACD87FDB2B14B3D30090BE99 /* Verification.swift in Sources */,
 				AC0B18182B14711B00B67F15 /* Register.swift in Sources */,
 				AC8DFDE32B121151006AE016 /* FireBaseLoginDemoApp.swift in Sources */,
 			);
