@@ -24,6 +24,7 @@ struct Login : View{
     @State var color = Color.black.opacity(0.7)
     @State var alert = false
     @State var error = ""
+   
    @Binding var show : Bool
     var body: some View{
         

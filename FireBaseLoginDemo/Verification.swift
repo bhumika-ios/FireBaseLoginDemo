@@ -8,15 +8,31 @@
 import SwiftUI
 
 struct Verification: View {
-   @StateObject var otpModel: OTPViewModel = .init()
+   @EnvironmentObject var otpModel: OTPViewModel
     @FocusState var activeField: OTPField?
     var body: some View {
        
         VStack{
              OTPField()
             
-            Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+            Button(action: {
+                Task{await otpModel.verifyOTP()}
+            }, label: {
                 Text("Verify")
+                    .fontWeight(.semibold)
+                    .foregroundStyle(.white)
+                    .padding(.vertical,12)
+                    .frame(maxWidth: .infinity)
+                    .background{
+                        RoundedRectangle(cornerRadius: 10, style: .continuous)
+                            .fill(.blue)
+                            .opacity(otpModel.isLoading ? 0 : 1)
+                        
+                    }
+                    .overlay {
+                        ProgressView()
+                            .opacity(otpModel.isLoading ? 1 : 0)
+                    }
             })
             .disabled(checkStatus())
             .opacity(checkStatus() ? 0.4 : 1)
@@ -33,9 +49,10 @@ struct Verification: View {
             .frame(maxHeight: .infinity, alignment:.top)
             .navigationTitle("Verification")
             .onChange(of: otpModel.otpFields) { newValue in
-                
+                OTPCondition(value: newValue)
                 
             }
+            .alert(otpModel.errorMsg, isPresented: $otpModel.showAlert){}
         }
     func checkStatus()->Bool{
         for index in 0..<6{
@@ -44,6 +61,19 @@ struct Verification: View {
         return false
     }
     func OTPCondition(value: [String]){
+        for index in 0..<6{
+            if value[index].count == 6{
+                DispatchQueue.main.async {
+                    otpModel.otpText = value[index]
+                    otpModel.otpFields[index] = ""
+                    
+                    for item in otpModel.otpText.enumerated(){
+                        otpModel.otpFields[item.offset] = String(item.element)
+                    }
+                }
+                return
+            }
+        }
         for index in 0..<5{
             if value[index].count == 1 && activeStateForIndex(index: index) == activeField{
                 activeField = activeStateForIndex(index: index + 1)

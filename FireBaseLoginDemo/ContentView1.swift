@@ -8,8 +8,17 @@
 import SwiftUI
 
 struct ContentView1: View {
+    @AppStorage("log_status") var log_status = false
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationView{
+            if log_status{
+                Text("Home")
+                    .navigationTitle("Home")
+            }
+            else{
+                Login1()
+            }
+        }
     }
 }
 
