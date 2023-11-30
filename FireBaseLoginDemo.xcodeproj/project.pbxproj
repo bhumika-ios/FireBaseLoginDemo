@@ -58,6 +58,7 @@
 		AC0B181B2B1471D300B67F15 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
 		AC489D732B16113B00E99791 /* Login1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login1.swift; sourceTree = "<group>"; };
 		AC6333D02B1746DD0093F71B /* ContentView1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView1.swift; sourceTree = "<group>"; };
+		AC66258C2B185A1E00F3F608 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		AC8DFDDF2B121151006AE016 /* FireBaseLoginDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireBaseLoginDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC8DFDE22B121151006AE016 /* FireBaseLoginDemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseLoginDemoApp.swift; sourceTree = "<group>"; };
 		AC8DFDE42B121151006AE016 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -129,6 +130,7 @@
 		AC8DFDE12B121151006AE016 /* FireBaseLoginDemo */ = {
 			isa = PBXGroup;
 			children = (
+				AC66258C2B185A1E00F3F608 /* Info.plist */,
 				AC8DFDE22B121151006AE016 /* FireBaseLoginDemoApp.swift */,
 				AC8DFDE42B121151006AE016 /* ContentView.swift */,
 				AC0B18172B14711B00B67F15 /* Register.swift */,
@@ -611,6 +613,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FireBaseLoginDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -647,6 +650,7 @@
 				ENABLE_PREVIEWS = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = FireBaseLoginDemo/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
